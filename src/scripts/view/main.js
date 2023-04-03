@@ -1,5 +1,5 @@
 function main() {
-  const baseUrl = "https://saadkost.my.id/api/dormitories";
+  const baseUrl = "https://books-api.dicoding.dev";
 
   const getBook = () => {
     // membuat instance dari XMLHttpRequest
@@ -47,7 +47,7 @@ function main() {
 
     // Mementapkan properti Content-Type dan X-Auth-Token pada Header request
     xhr.setRequestHeader("Content-Type", "application/json");
-    // xhr.setRequestHeader("X-Auth-Token", "12345");
+    xhr.setRequestHeader("X-Auth-Token", "12345");
 
     // Mengirimkan request dan menyisipkan JSON.stringify(book) pada body
     xhr.send(JSON.stringify(book));
@@ -73,7 +73,7 @@ function main() {
 
     // Mementapkan properti Content-Type dan X-Auth-Token pada Header request
     xhr.setRequestHeader("Content-Type", "application/json");
-    // xhr.setRequestHeader("X-Auth-Token", "12345");
+    xhr.setRequestHeader("X-Auth-Token", "12345");
 
     // Mengirimkan request dan menyisipkan JSON.stringify(book) pada body
     xhr.send(JSON.stringify(book));
@@ -98,7 +98,7 @@ function main() {
     xhr.open("DELETE", `${baseUrl}/delete/${bookId}`);
 
     // Mementapkan properti Content-Type dan X-Auth-Token pada Header request
-    // xhr.setRequestHeader("X-Auth-Token", "12345");
+    xhr.setRequestHeader("X-Auth-Token", "12345");
 
     // Mengirimkan request
     xhr.send();
