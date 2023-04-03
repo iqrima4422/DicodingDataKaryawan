@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Karyawan</title>
+  </head>
+  <body>
+    <header>
+      <app-header></app-header>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">Form Input Data Diri Karyawan</h5>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="inputBookId">ID Karyawan</label>
+                <input
+                  id="inputBookId"
+                  type="number"
+                  class="form-control"
+                  placeholder="ID Karyawan"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputBookTitle">Nama Lengkap</label>
+                <input
+                  id="inputBookTitle"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nama Lengkap"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputBookAuthor">Alamat</label>
+                <input
+                  id="inputBookAuthor"
+                  type="text"
+                  class="form-control"
+                  placeholder="Alamat"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputBookAuthor">Telepon</label>
+                <input
+                  id="inputTelepon"
+                  type="number"
+                  class="form-control"
+                  placeholder="No Telepon"
+                />
+              </div>
+              <!-- form upload gambar -->
+              <div class="form-group">
+                <label for="inputBookImage">Gambar</label>
+                <input
+                  id="inputBookImage"
+                  type="file"
+                  class="form-control"
+                  placeholder="Gambar"
+                />
+              </div>
+
+              <div class="form-group">
+                <button id="buttonSave" class="btn btn-success">Simpan</button>
+                <button id="buttonUpdate" class="btn btn-warning">Ubah</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Detail Data karyawan</h5>
+        </div>
+        <div class="card-body">
+        <div id="listBook" class="row"></div>
+      </div>
+    </main>
+    <footer>
+      <p><b>Copyright &copy;</b> 2023</p>
+    </footer>
+  </body>
+</html>

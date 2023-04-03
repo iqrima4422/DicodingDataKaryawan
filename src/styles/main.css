@@ -1,0 +1,24 @@
+@import "appheader.css";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+body {
+  background-color: wheat;
+}
+
+footer {
+  background-color: #ffc107;
+  padding: 7px;
+  text-align: center;
+}
